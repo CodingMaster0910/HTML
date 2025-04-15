@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹디자인기능사 레이아웃 A-1</title>
+    <title>웹디자인긴으사 레이아웃 A-2</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
@@ -20,34 +20,33 @@
         #header .logo {
             width: 20%;
             height: 100px;
-            background-color: #efefef;
+            background-color:#efefef;
         }
         #header .nav {
             width: 80%;
             height: 100px;
             background-color: #e3e3e3;
         }
-
         #slider {
             width: 100%;
             height: 300px;
             background-color: #d9d9d9;
         }
-        #contents {
-            width: 100%; 
-            display: flex;     
+        #main {
+            width: 100%;
+            display: flex;
         }
-        #contents .content1 {
+        #main .content1 {
             width: 33.3333%;
             height: 200px;
             background-color: #d1d1d1;
         }
-        #contents .content2 {
+        #main .content2 {
             width: 33.3333%;
             height: 200px;
             background-color: #c7c7c7;
         }
-        #contents .content3 {
+        #main .content3 {
             width: 33.3333%;
             height: 200px;
             background-color: #bcbcbc;
@@ -75,28 +74,29 @@
 </head>
 <body>
     <div id="wrap">
-        <div id="header">
-            <div class="logo"></div>
-            <div class="nav"></div>
-        </div>
+        <header id="header">
+            <h1 class="logo"></h1>
+            <nav class="nav"></nav>
+        </header>
         <!-- //header -->
-        <div id="slider">
-        </div>
+
+        <article id="slider">
+
+        </article>
         <!-- //slider -->
 
-        <div id="contents">
-            <div class="content1"></div>
-            <div class="content2"></div>
-            <div class="content3"></div>
-        </div>
-        <!-- //contents -->
-
-        <div id="footer">
-            <div class="footer1"></div>       
+        <main id="main">
+            <section class="content1"></section>
+            <section class="content2"></section>
+            <section class="content3"></section>
+        </main>
+        <!-- //main -->
+        <footer id="footer">
+            <div class="footer1"></div>
             <div class="footer2"></div>
             <div class="footer3"></div>
-        </div>
-        <!-- //contents -->
+        </footer>
+        <!-- //footer -->
     </div>
 </body>
 </html>
